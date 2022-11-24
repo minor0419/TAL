@@ -1,7 +1,6 @@
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 455.23.05    Driver Version: 455.23.05    CUDA Version: 11.1     |
-|-------------------------------+----------------------+----------------------+
-
+# OS : ubuntu-ja-18.04.3-desktop-amd64
+# GPU_Driver :  NVIDIA-SMI 455.23.05    Driver Version: 455.23.05    CUDA Version: 11.1
+# GPU : NVIDIA RTX2060
 
 conda create -n open-mmlab python=3.7 -y
 conda activate open-mmlab
