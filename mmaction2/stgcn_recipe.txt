@@ -2,6 +2,9 @@
 # GPU_Driver :  NVIDIA-SMI 455.23.05    Driver Version: 455.23.05    CUDA Version: 11.1
 # GPU : NVIDIA RTX2060
 
+sudo apt update
+sudo apt updrade
+sudo apt install build-essential
 conda create -n open-mmlab python=3.7 -y
 conda activate open-mmlab
 
@@ -10,6 +13,7 @@ pip   uninstall -y         pillow pil jpeg libtiff libjpeg-turbo
 conda install -yc conda-forge libjpeg-turbo
 CFLAGS="${CFLAGS} -mavx2" pip install --upgrade --no-cache-dir --force-reinstall --no-binary :all: --compile pillow-simd
 conda install -y jpeg libtiff
+
 pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
 pip install git+https://github.com/open-mmlab/mim.git
 mim install mmaction2 -f https://github.com/open-mmlab/mmaction2.git
