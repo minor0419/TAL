@@ -1,4 +1,4 @@
-**時間的行動定位****(****Temporal**** ****Action**** ****Localization****)**** ****調査**
+**時間的行動定位(****Temporal Action Localization****)**** 調査**
 作成：2022/11/7
 ネクストシステム 古林
 
@@ -152,4 +152,13 @@
   PaperWithCodeでの順位： 最近過ぎてデータなし
   GitHubのコードのURL：[https://github.com/yjh0410/pytorch_yowo](https://github.com/yjh0410/pytorch_yowo)　　
   
+  * TadTR: Transformer を使用したエンドツーエンドの一時的なアクション検出
+![](media/image14.png)
+  時間的行動検出（TAD）は、トリミングされていないビデオ内のすべての行動インスタンスの意味的ラベルと時間的間隔を決定することを目的としています。TadTRと呼ばれるTADのためのエンドツーエンドのTransformerベース の方法を提案する。アクションクエリと呼ばれる学習可能な埋め込みの 小さなセットを与えると、TadTRは各クエリに対して映像から時間的コン テキスト情報を適応的に抽出し、そのコンテキストを用いてアクション インスタンスを直接予測する。TransformerをTADに適応させるために、 我々はその局所性認識を強化するための3つの改良を提案する。コアとなるのは時間的変形可能な注意モジュールであり、ビデオ中の重要なスニペットの疎な集合に選択的に注意を向ける。セグメント洗練機構とアクションネス回帰ヘッドは、それぞれ予測されたインスタンスの境界と信頼度を洗練するために設計されている。このようなシンプルなパイプラインにより、TadTRは従来の検出器よりも低い計算コストで、優れた性能 を維持したまま検出を行うことができる。
+  
+  論文URL： [https://arxiv.org/pdf/2106.10271.pdf](https://arxiv.org/pdf/2106.10271.pdf)
+  採択された学会：IEEE Transactions on Image Processing (TIP) によって承認されました
+  論文引用数：？
+  PaperWithCodeでの順位： ？
+  GitHubのコードのURL：[https://github.com/xlliu7/TadTR](https://github.com/xlliu7/TadTR)　
   
