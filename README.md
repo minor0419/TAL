@@ -14,6 +14,7 @@
   論文引用数：121  
   PaperWithCodeでの順位：６位　時間的行動定位部門　ActivityNet-1.3データベース  
   GitHubのコードのURL：https://github.com/Pilhyeon/BaSNet-pytorch  
+  著者：Xiaolong Liu, Qimeng Wang, Yao Hu, Xu Tang, Shiwei Zhang, Song Bai, and Xiang Bai, Senior Member, IEEE  
   ***
   
 
@@ -30,6 +31,7 @@
   論文引用数：18  
   PaperWithCodeでの順位：1位　時間的行動定位部門　THUMOS’14データベース  
   GitHubのコードのURL： [http://github.com/happyharrycn/actionformer_release](http://github.com/happyharrycn/actionformer_release)  
+  著者：Chen-Lin Zhang, Jianxin Wu, and Yin Li, State Key Laboratory for Novel Software Technology, Nanjing University, China Paradigm Inc, Beijing, China, University of Wisconsin-Madison, USA
   ***
   
   
@@ -52,7 +54,8 @@
   論文引用数：９  
   PaperWithCodeでの順位：1位　時間的行動定位部門　ActivityNet-1.3データベース  
   GitHubのコードのURL：https://github.com/wangxiang1230/SSTAP   
-  
+  著者：Xiang Wang, Zhiwu Qing, Ziyuan Huang, Yutong Feng2, Shiwei Zhang,Jianwen Jiang, Mingqian Tang, Changxin Gao, Nong Sang, Key Laboratory of Image Processing and Intelligent Control School of Artificial Intelligence and Automation, Huazhong University of Science and Technology, Alibaba Group  
+
   
   
   
@@ -87,6 +90,7 @@
   論文引用数：不明　Google Scholar 検索不能  
   PaperWithCodeでの順位：1位　時間的行動定位部門　J-HMDB-21データベース  
   GitHubのコードのURL：https://github.com/joslefaure/hit 　(現在何もアップロードされていません)  
+  著者：Gueter Josmy Faure, Min-Hung Chen, Shang-Hong Lai, National Tsing Hua University, Taiwan Microsoft AI R&D Center, Taiwan  
 ***
 
 
@@ -112,6 +116,7 @@
   PaperWithCodeでの順位：1位　時間的行動定位部門　UCF101-24データベース  
   GitHubのコードのURL：[https://github.com/wei-tim/YOWO](https://github.com/wei-tim/YOWO)  
   GitHubには進化版的なリポジトリが62個存在している。  
+  著者：Okan K¨op¨ukl¨u, Xiangyu Wei, Gerhard Rigoll, Institute for Human-Machine Communication, Technical Univ. of Munich, Germany  
   ***
   
   * Yowo_Plus
@@ -128,6 +133,7 @@
   論文引用数：なし　最近過ぎてデータなし  
   PaperWithCodeでの順位： 最近過ぎてデータなし  
   GitHubのコードのURL：[https://github.com/yjh0410/pytorch_yowo](https://github.com/yjh0410/pytorch_yowo)  
+  著者：Jianhua Yanga, State Key Laboratory of Robotics and System, Harbin Institute of Technology, Harbin 150001, China  
   ***
   
   * TadTR: Transformer を使用したエンドツーエンドの一時的なアクション検出
@@ -139,3 +145,4 @@
   論文引用数：？  
   PaperWithCodeでの順位： ？  
   GitHubのコードのURL：[https://github.com/xlliu7/TadTR](https://github.com/xlliu7/TadTR)  
+  著者：Xiaolong Liu, Qimeng Wang, Yao Hu, Xu Tang, Shiwei Zhang, Song Bai, and Xiang Bai, Senior Member, IEEE  
