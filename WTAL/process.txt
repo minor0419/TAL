@@ -1,0 +1,173 @@
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/pytorch-i3d$ pip install opencv-python
+Collecting opencv-python
+  Using cached opencv_python-4.6.0.66-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (60.9 MB)
+Requirement already satisfied: numpy>=1.14.5 in /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages (from opencv-python) (1.23.5)
+Installing collected packages: opencv-python
+Successfully installed opencv-python-4.6.0.66
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/pytorch-i3d$ cd ../WTAL-Uncertainty-Modeling/
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ $ bash run.sh
+$: コマンドが見つかりません
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ bash run.sh
+Traceback (most recent call last):
+  File "./main.py", line 8, in <module>
+    from test import *
+  File "/home/minoru/PycharmProjects/wtal/WTAL-Uncertainty-Modeling/test.py", line 7, in <module>
+    from eval.eval_detection import ANETdetection
+  File "/home/minoru/PycharmProjects/wtal/WTAL-Uncertainty-Modeling/eval/eval_detection.py", line 7, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ pip install pandas
+Collecting pandas
+  Using cached pandas-1.5.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+Collecting pytz>=2020.1
+  Using cached pytz-2022.6-py2.py3-none-any.whl (498 kB)
+Collecting python-dateutil>=2.8.1
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Requirement already satisfied: numpy>=1.20.3 in /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages (from pandas) (1.23.5)
+Requirement already satisfied: six>=1.5 in /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages (from python-dateutil>=2.8.1->pandas) (1.16.0)
+Installing collected packages: pytz, python-dateutil, pandas
+Successfully installed pandas-1.5.2 python-dateutil-2.8.2 pytz-2022.6
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ bash run.sh
+Traceback (most recent call last):
+  File "./main.py", line 8, in <module>
+    from test import *
+  File "/home/minoru/PycharmProjects/wtal/WTAL-Uncertainty-Modeling/test.py", line 7, in <module>
+    from eval.eval_detection import ANETdetection
+  File "/home/minoru/PycharmProjects/wtal/WTAL-Uncertainty-Modeling/eval/eval_detection.py", line 8, in <module>
+    from joblib import Parallel, delayed
+ModuleNotFoundError: No module named 'joblib'
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ pip install joblib
+Collecting joblib
+  Using cached joblib-1.2.0-py3-none-any.whl (297 kB)
+Installing collected packages: joblib
+Successfully installed joblib-1.2.0
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ bash run.sh
+Traceback (most recent call last):
+  File "./main.py", line 8, in <module>
+    from test import *
+  File "/home/minoru/PycharmProjects/wtal/WTAL-Uncertainty-Modeling/test.py", line 8, in <module>
+    from tqdm import tqdm
+ModuleNotFoundError: No module named 'tqdm'
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ pip insall tqdm
+ERROR: unknown command "insall" - maybe you meant "install"
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ pip install tqdm
+Collecting tqdm
+  Using cached tqdm-4.64.1-py2.py3-none-any.whl (78 kB)
+Installing collected packages: tqdm
+Successfully installed tqdm-4.64.1
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ bash run.sh
+Traceback (most recent call last):
+  File "./main.py", line 10, in <module>
+    from tensorboard_logger import Logger
+ModuleNotFoundError: No module named 'tensorboard_logger'
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ pip install tensorboard_logger
+Collecting tensorboard_logger
+  Using cached tensorboard_logger-0.1.0-py2.py3-none-any.whl (17 kB)
+Requirement already satisfied: six in /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages (from tensorboard_logger) (1.16.0)
+Requirement already satisfied: pillow>=4.1.1 in /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages (from tensorboard_logger) (9.3.0)
+Requirement already satisfied: scipy>=0.19.1 in /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages (from tensorboard_logger) (1.4.1)
+Requirement already satisfied: protobuf in /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages (from tensorboard_logger) (4.21.9)
+Requirement already satisfied: numpy in /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages (from tensorboard_logger) (1.23.5)
+Installing collected packages: tensorboard_logger
+Successfully installed tensorboard_logger-0.1.0
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ bash run.sh
+Traceback (most recent call last):
+  File "./main.py", line 10, in <module>
+    from tensorboard_logger import Logger
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/tensorboard_logger/__init__.py", line 3, in <module>
+    from .tensorboard_logger import *
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/tensorboard_logger/tensorboard_logger.py", line 19, in <module>
+    from tensorflow.core.util import event_pb2
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/tensorflow/__init__.py", line 41, in <module>
+    from tensorflow.python.tools import module_util as _module_util
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/tensorflow/python/__init__.py", line 53, in <module>
+    from tensorflow.core.framework.graph_pb2 import *
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/tensorflow/core/framework/graph_pb2.py", line 16, in <module>
+    from tensorflow.core.framework import function_pb2 as tensorflow_dot_core_dot_framework_dot_function__pb2
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/tensorflow/core/framework/function_pb2.py", line 16, in <module>
+    from tensorflow.core.framework import attr_value_pb2 as tensorflow_dot_core_dot_framework_dot_attr__value__pb2
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/tensorflow/core/framework/attr_value_pb2.py", line 16, in <module>
+    from tensorflow.core.framework import tensor_pb2 as tensorflow_dot_core_dot_framework_dot_tensor__pb2
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/tensorflow/core/framework/tensor_pb2.py", line 16, in <module>
+    from tensorflow.core.framework import resource_handle_pb2 as tensorflow_dot_core_dot_framework_dot_resource__handle__pb2
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/tensorflow/core/framework/resource_handle_pb2.py", line 16, in <module>
+    from tensorflow.core.framework import tensor_shape_pb2 as tensorflow_dot_core_dot_framework_dot_tensor__shape__pb2
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/tensorflow/core/framework/tensor_shape_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/google/protobuf/descriptor.py", line 560, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot not be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ pip uninstall protobuf
+Found existing installation: protobuf 4.21.9
+Uninstalling protobuf-4.21.9:
+  Would remove:
+    /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/google/_upb/_message.abi3.so
+    /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/google/protobuf/*
+    /home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/protobuf-4.21.9.dist-info/*
+Proceed (Y/n)? 
+  Successfully uninstalled protobuf-4.21.9
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ pip install 3.20
+ERROR: Could not find a version that satisfies the requirement 3.20 (from versions: none)
+ERROR: No matching distribution found for 3.20
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ pip install 3.20.1
+ERROR: Could not find a version that satisfies the requirement 3.20.1 (from versions: none)
+ERROR: No matching distribution found for 3.20.1
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ pip install protobuf==2.3.0
+Collecting protobuf==2.3.0
+  Using cached protobuf-2.3.0.tar.gz (50 kB)
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+  
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [7 lines of output]
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-u8nqy4ot/protobuf_87342d61c1594c7ca5a8a631a77382b0/setup.py", line 34
+          print "Can't find required file: " + source
+                ^
+      SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Can't find required file: " + source)?
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ pip install protobuf==3.20
+Collecting protobuf==3.20
+  Downloading protobuf-3.20.0-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 13.7 MB/s eta 0:00:00
+Installing collected packages: protobuf
+Successfully installed protobuf-3.20.0
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ bash run.sh
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10000/10000 [19:46:05<00:00,  7.12s/it]
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ $ bash run_eval.sh
+$: コマンドが見つかりません
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ bash run_eval.sh
+Traceback (most recent call last):
+  File "./main_eval.py", line 45, in <module>
+    test(net, config, logger, test_loader, test_info, 0, model_file=config.model_file)
+  File "/home/minoru/PycharmProjects/wtal/WTAL-Uncertainty-Modeling/test.py", line 15, in test
+    net.load_state_dict(torch.load(model_file))
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/torch/serialization.py", line 579, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/minoru/miniconda3/envs/wtal/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: './model_best.pkl'
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ bash run_eval.sh
+(wtal) minoru@B450M-A:~/PycharmProjects/wtal/WTAL-Uncertainty-Modeling$ 
+
+
