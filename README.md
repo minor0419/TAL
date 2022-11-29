@@ -3,7 +3,7 @@
 ネクストシステム 古林  
 
   * 弱教師付き時間アクションローカリゼーションのためのバックグラウンド抑制ネットワーク  
-  Suppression Network for Weakly-supervised Temporal Action Localization
+  Background Suppression Network for Weakly-supervised Temporal Action Localization
   
   ![](media/image1.png)
   この論文の特徴は動画をRGBとオプティカルフローに分けて扱う事です。
