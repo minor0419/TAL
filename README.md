@@ -9,12 +9,12 @@
   この論文の特徴は動画をRGBとオプティカルフローに分けて扱う事です。
   行動定位の課題として背景画面の取り扱いがありますが。ここでは抑制ブランチ側にフィルタを設けて背景フレームからの活性化を抑制するよう学習するようです。このようなアーキテクチャを非対称トレーニング戦略と呼び、2ブランチの重み共有アーキテクチャを持つバックグラウンド抑制ネットワーク（BaS-Net）を提案しています。
   
-  論文URL： [https://arxiv.org/abs/1911.09963](https://arxiv.org/abs/1911.09963)
-  採択された学会：AAAI2020(アメリカ人工知能学会)
-  論文引用数：121
-  PaperWithCodeでの順位：６位　時間的行動定位部門　ActivityNet-1.3データベース
-  GitHubのコードのURL：https://github.com/Pilhyeon/BaSNet-pytorch
-  
+  論文URL： [https://arxiv.org/abs/1911.09963](https://arxiv.org/abs/1911.09963)  
+  採択された学会：AAAI2020(アメリカ人工知能学会)  
+  論文引用数：121  
+  PaperWithCodeでの順位：６位　時間的行動定位部門　ActivityNet-1.3データベース  
+  GitHubのコードのURL：https://github.com/Pilhyeon/BaSNet-pytorch  
+  ***
   
 
   * ActionFormer：トランスフォーマーによるアクションの瞬間のローカライズ
@@ -25,12 +25,12 @@
   アクションインスタンスを検出するらしいです。まずビデオクリップの特徴量(I3D)のシーケンスを抽出し、これらの各特徴量をマルチスケールトランスフォーマーにより特徴ピラミッドに変換し、特徴ピラミッドを分類器と回帰器が共有して、時間ステップごとに行動候補を生成するらしいです。
   尚GitHubの実装は動画入力ではなくTHUMOS’14の計算済みI3d特徴量で、出力はテストデータのみとなっております。
   
-  論文URL： [2202.07925.pdf (arxiv.org)](https://arxiv.org/pdf/2202.07925.pdf)
-  採択された学会：European Conference on Computer Vision, 2022
-  論文引用数：18
-  PaperWithCodeでの順位：1位　時間的行動定位部門　THUMOS’14データベース
-  GitHubのコードのURL： [http://github.com/happyharrycn/actionformer_release](http://github.com/happyharrycn/actionformer_release)
-  
+  論文URL： [2202.07925.pdf (arxiv.org)](https://arxiv.org/pdf/2202.07925.pdf)  
+  採択された学会：European Conference on Computer Vision, 2022  
+  論文引用数：18  
+  PaperWithCodeでの順位：1位　時間的行動定位部門　THUMOS’14データベース  
+  GitHubのコードのURL： [http://github.com/happyharrycn/actionformer_release](http://github.com/happyharrycn/actionformer_release)  
+  ***
   
   
   
@@ -47,11 +47,11 @@
   
   バックボーン後はデータ拡張のために時間シフトの概念が用いられているそうです。そのあと提案関係モジュールが続きます。ここでは、対象となる行動の境界を正確に特定するためが自己注視操作を導入して各提案相互の依存関係を求めます。そして最終的に提案＋分類パイプラインに従って、最終的な検出結果を生成しています。提案関連モデルからパイプラインへのつながりの説明が不明瞭に感じました。
   
-  論文URL： [https://paperswithcode.com/paper/proposal-relation-network-for-temporal-action](https://paperswithcode.com/paper/proposal-relation-network-for-temporal-action)
-  採択された学会：不明　アリババ・グループの支援を受けています。
-  論文引用数：９
-  PaperWithCodeでの順位：1位　時間的行動定位部門　ActivityNet-1.3データベース
-  GitHubのコードのURL：https://github.com/wangxiang1230/SSTAP 
+  論文URL： [https://paperswithcode.com/paper/proposal-relation-network-for-temporal-action](https://paperswithcode.com/paper/proposal-relation-network-for-temporal-action)  
+  採択された学会：不明　アリババ・グループの支援を受けています。  
+  論文引用数：９  
+  PaperWithCodeでの順位：1位　時間的行動定位部門　ActivityNet-1.3データベース  
+  GitHubのコードのURL：https://github.com/wangxiang1230/SSTAP   
   
   
   
@@ -82,12 +82,12 @@
 ![](media/image7.png)
 図 4: Intra-Modality Aggregator(IMA) の説明図。このように、本システムでは、1つのユニットから次のユニットへの特徴量が、まず文脈上の手がかりで補強され、次にフィルタリングされます。
 
-  論文URL： [http://arxiv.org/abs/2210.12686v1](http://arxiv.org/abs/2210.12686v1)
-  採択された学会：不明　マイクロソフトR&amp;D
-  論文引用数：不明　Google Scholar 検索不能
-  PaperWithCodeでの順位：1位　時間的行動定位部門　J-HMDB-21データベース
-  GitHubのコードのURL：https://github.com/joslefaure/hit 　(現在何もアップロードされていません)
-
+  論文URL： [http://arxiv.org/abs/2210.12686v1](http://arxiv.org/abs/2210.12686v1)  
+  採択された学会：不明　マイクロソフトR&amp;D  
+  論文引用数：不明　Google Scholar 検索不能  
+  PaperWithCodeでの順位：1位　時間的行動定位部門　J-HMDB-21データベース  
+  GitHubのコードのURL：https://github.com/joslefaure/hit 　(現在何もアップロードされていません)  
+***
 
 
 
@@ -105,14 +105,14 @@
   図：2D-CNNブランチと3D-CNNブランチから来る出力特徴マップを集約するためのチャネル融合とアテンション機構
   
   ![](media/image10.png)
-  図：(a)3D-CNNバックボーンと(b)2D-CNNバックボーンの活性化マップ。3D-CNNバックボーンは、動き／アクションが起きている部分に着目しています。2D-CNNバックボーンは、キーフレームに写っている全ての人物に着目している。例として、バレーボールのスパイク（上）、スケートボード（中）、ロープクライミング（下）を挙げることができます。YOWOはいくつかの欠点も持っています。生成するのはキーフレームとクリップで利用可能なすべての情報に従って予測を行うため、時には誤検出をすることがあります。YOWOは正しい行動定位を行うために十分な時間的内容を必要とします。人が急に動作を始めると、初期位置の特定が難しくなります。初期状態において処理されたクリップとキーフレームにポーズ情報が含まれていないからです。そこで長期特徴量バンク（LFB: Long Term Feature Bank）を利用します。クリップの長さを長くすることで、利用可能な時間情報が増加し、結果としてYOWOの性能が向上します。LFBは時間情報を増加させる目的で活用されています。論文URL： [https://arxiv.org/pdf/1911.06644v5.pdf](https://arxiv.org/pdf/1911.06644v5.pdf)
-  採択された学会：不明　ドイツ科学アカデミー（DFG）及びNVIDIA社から支援を受けている
-  論文引用数：65
-  PaperWithCodeでの順位：1位　時間的行動定位部門　UCF101-24データベース
-  GitHubのコードのURL：[https://github.com/wei-tim/YOWO](https://github.com/wei-tim/YOWO)　　
-  
-  GitHubには進化版的なリポジトリが62個存在している。
-  
+  図：(a)3D-CNNバックボーンと(b)2D-CNNバックボーンの活性化マップ。3D-CNNバックボーンは、動き／アクションが起きている部分に着目しています。2D-CNNバックボーンは、キーフレームに写っている全ての人物に着目している。例として、バレーボールのスパイク（上）、スケートボード（中）、ロープクライミング（下）を挙げることができます。YOWOはいくつかの欠点も持っています。生成するのはキーフレームとクリップで利用可能なすべての情報に従って予測を行うため、時には誤検出をすることがあります。YOWOは正しい行動定位を行うために十分な時間的内容を必要とします。人が急に動作を始めると、初期位置の特定が難しくなります。初期状態において処理されたクリップとキーフレームにポーズ情報が含まれていないからです。そこで長期特徴量バンク（LFB: Long Term Feature Bank）を利用します。クリップの長さを長くすることで、利用可能な時間情報が増加し、結果としてYOWOの性能が向上します。LFBは時間情報を増加させる目的で活用されています。  
+  論文URL： [https://arxiv.org/pdf/1911.06644v5.pdf](https://arxiv.org/pdf/1911.06644v5.pdf)  
+  採択された学会：不明　ドイツ科学アカデミー（DFG）及びNVIDIA社から支援を受けている  
+  論文引用数：65  
+  PaperWithCodeでの順位：1位　時間的行動定位部門　UCF101-24データベース  
+  GitHubのコードのURL：[https://github.com/wei-tim/YOWO](https://github.com/wei-tim/YOWO)  
+  GitHubには進化版的なリポジトリが62個存在している。  
+  ***
   
   * Yowo_Plus
   
@@ -121,21 +121,21 @@
   YOWO進化版　20 Oct 2022  ·  [Jianhua Yang](https://paperswithcode.com/author/jianhua-yang)
   この技術報告では、YOWO時効検出の更新について紹介します。 我々は、3D-ResNext-101やYOLOv2を含むYOWOのオフィシャル実装と同じものを使っていますが、再実装されたYOLOv2のよりトレーニング済みの重量を使用します。 YOWO-NanoはUCF101-24で90FPSの81.0%のフレームmAPと49.7%のビデオフレームmAPを達成しました。
   
-  私たちは改善するために、小さなデザイン変更をたくさん行いました。ネットワーク構造には3D-ResNext-101やYOLOv2を含むYOWOと同じものを使用しますが、実装済みのYOLOv2の事前学習重量は、YOLOv2よりも優れています。また,YOWOにおけるラベル割り当てを最適化しました。アクションインスタンスを正確に検出するために、ボックス回帰のためのGIoU損失をデプロイしました。インクリメンタルな改善の後、YOWOは公式のYOWOよりもかなり高い84.9\\%のフレームmAPと50.5\\%の動画mAPをUCF101-24で達成しました。AVAでは、最適化されたYOWOは、公式YOWOを超える16フレームの20.6\\%のフレームmAPを達成しました。32フレームのYOWOでは、RTX 3090 GPU上で25FPSの21.6フレームのmAPを実現しています。 最適化されたYOWOをYOWO-Plusと呼ぶことにしました。さらに、3D-ResNext-101を効率的な3D-ShuffleNet-v2に置き換え、軽量なアクション検出器YOWO-Nanoを設計しました。YOWO-Nano は UCF101-24 上で 90 FPS 以上の 81.0 \\% フレーム mAPと49.7\\%ビデオフレームmAPを達成します。また、AVAで約90 FPSの18.4 \\%のフレームmAPを達成しています。（要するに現状世界一）
+  私たちは改善するために、小さなデザイン変更をたくさん行いました。ネットワーク構造には3D-ResNext-101やYOLOv2を含むYOWOと同じものを使用しますが、実装済みのYOLOv2の事前学習重量は、YOLOv2よりも優れています。また,YOWOにおけるラベル割り当てを最適化しました。アクションインスタンスを正確に検出するために、ボックス回帰のためのGIoU損失をデプロイしました。インクリメンタルな改善の後、YOWOは公式のYOWOよりもかなり高い84.9\\%のフレームmAPと50.5\\%の動画mAPをUCF101-24で達成しました。AVAでは、最適化されたYOWOは、公式YOWOを超える16フレームの20.6\\%のフレームmAPを達成しました。32フレームのYOWOでは、RTX 3090 GPU上で25FPSの21.6フレームのmAPを実現しています。 最適化されたYOWOをYOWO-Plusと呼ぶことにしました。さらに、3D-ResNext-101を効率的な3D-ShuffleNet-v2に置き換え、軽量なアクション検出器YOWO-Nanoを設計しました。YOWO-Nano は UCF101-24 上で 90 FPS 以上の 81.0 \\% フレーム mAPと49.7\\%ビデオフレームmAPを達成します。また、AVAで約90 FPSの18.4 \\%のフレームmAPを達成しています。（要するに現状世界一）  
   
-  論文URL： [https://arxiv.org/pdf/2210.11219v1.pdf](https://arxiv.org/pdf/2210.11219v1.pdf)
-  採択された学会：不明　
-  論文引用数：なし　最近過ぎてデータなし
-  PaperWithCodeでの順位： 最近過ぎてデータなし
-  GitHubのコードのURL：[https://github.com/yjh0410/pytorch_yowo](https://github.com/yjh0410/pytorch_yowo)　　
-  
+  論文URL： [https://arxiv.org/pdf/2210.11219v1.pdf](https://arxiv.org/pdf/2210.11219v1.pdf)  
+  採択された学会：不明　  
+  論文引用数：なし　最近過ぎてデータなし  
+  PaperWithCodeでの順位： 最近過ぎてデータなし  
+  GitHubのコードのURL：[https://github.com/yjh0410/pytorch_yowo](https://github.com/yjh0410/pytorch_yowo)  
+  ***
   
   * TadTR: Transformer を使用したエンドツーエンドの一時的なアクション検出
 ![](media/image12.png)
-  時間的行動検出（TAD）は、トリミングされていないビデオ内のすべての行動インスタンスの意味的ラベルと時間的間隔を決定することを目的としています。TadTRと呼ばれるTADのためのエンドツーエンドのTransformerベース の方法を提案する。アクションクエリと呼ばれる学習可能な埋め込みの 小さなセットを与えると、TadTRは各クエリに対して映像から時間的コン テキスト情報を適応的に抽出し、そのコンテキストを用いてアクション インスタンスを直接予測する。TransformerをTADに適応させるために、 我々はその局所性認識を強化するための3つの改良を提案する。コアとなるのは時間的変形可能な注意モジュールであり、ビデオ中の重要なスニペットの疎な集合に選択的に注意を向ける。セグメント洗練機構とアクションネス回帰ヘッドは、それぞれ予測されたインスタンスの境界と信頼度を洗練するために設計されている。このようなシンプルなパイプラインにより、TadTRは従来の検出器よりも低い計算コストで、優れた性能 を維持したまま検出を行うことができる。
+  時間的行動検出（TAD）は、トリミングされていないビデオ内のすべての行動インスタンスの意味的ラベルと時間的間隔を決定することを目的としています。TadTRと呼ばれるTADのためのエンドツーエンドのTransformerベース の方法を提案する。アクションクエリと呼ばれる学習可能な埋め込みの 小さなセットを与えると、TadTRは各クエリに対して映像から時間的コン テキスト情報を適応的に抽出し、そのコンテキストを用いてアクション インスタンスを直接予測する。TransformerをTADに適応させるために、 我々はその局所性認識を強化するための3つの改良を提案する。コアとなるのは時間的変形可能な注意モジュールであり、ビデオ中の重要なスニペットの疎な集合に選択的に注意を向ける。セグメント洗練機構とアクションネス回帰ヘッドは、それぞれ予測されたインスタンスの境界と信頼度を洗練するために設計されている。このようなシンプルなパイプラインにより、TadTRは従来の検出器よりも低い計算コストで、優れた性能 を維持したまま検出を行うことができる。  
   
-  論文URL： [https://arxiv.org/pdf/2106.10271.pdf](https://arxiv.org/pdf/2106.10271.pdf)
-  採択された学会：IEEE Transactions on Image Processing (TIP) によって承認されました
-  論文引用数：？
-  PaperWithCodeでの順位： ？
-  GitHubのコードのURL：[https://github.com/xlliu7/TadTR](https://github.com/xlliu7/TadTR)　
+  論文URL： [https://arxiv.org/pdf/2106.10271.pdf](https://arxiv.org/pdf/2106.10271.pdf)  
+  採択された学会：IEEE Transactions on Image Processing (TIP) によって承認されました  
+  論文引用数：？  
+  PaperWithCodeでの順位： ？  
+  GitHubのコードのURL：[https://github.com/xlliu7/TadTR](https://github.com/xlliu7/TadTR)  
