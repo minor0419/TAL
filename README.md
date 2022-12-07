@@ -16,7 +16,7 @@
   GitHubのコードのURL：[https://github.com/Pilhyeon/BaSNet-pytorch](https://github.com/Pilhyeon/BaSNet-pytorch)  
   著者：Xiaolong Liu, Qimeng Wang, Yao Hu, Xu Tang, Shiwei Zhang, Song Bai, and Xiang Bai, Senior Member, IEEE  
   
-  \*\*\*
+***
 
   * ActionFormer：トランスフォーマーによるアクションの瞬間のローカライズ  
   ActionFormer：Localizing Moments of Actions with Transformers
@@ -32,7 +32,7 @@
   PaperWithCodeでの順位：1位　時間的行動定位部門　THUMOS’14データベース
   GitHubのコードのURL： [http://github.com/happyharrycn/actionformer_release](http://github.com/happyharrycn/actionformer_release)
   著者：Chen-Lin Zhang, Jianxin Wu, and Yin Li, State Key Laboratory for Novel Software Technology, Nanjing University, China Paradigm Inc, Beijing, China, University of Wisconsin-Madison, USA  
-  \*\*\*
+***
   
 
   * 時間的行動検出のための提案関係ネットワーク  
@@ -52,7 +52,7 @@
   PaperWithCodeでの順位：1位　時間的行動定位部門　ActivityNet-1.3データベース  
   GitHubのコードのURL：[https://github.com/wangxiang1230/SSTAP](https://github.com/wangxiang1230/SSTAP)   
   著者：Xiang Wang, Zhiwu Qing, Ziyuan Huang, Yutong Feng2, Shiwei Zhang,Jianwen Jiang, Mingqian Tang, Changxin Gao, Nong Sang, Key Laboratory of Image Processing and Intelligent Control School of Artificial Intelligence and Automation, Huazhong University of Science and Technology, Alibaba Group  
-  
+***  
   
   
   * 行動検出のための全体的相互作用変圧器ネットワーク  
@@ -85,7 +85,7 @@
   論文引用数：不明　Google Scholar 検索不能  
   PaperWithCodeでの順位：1位　時間的行動定位部門　J-HMDB-21データベース  
   GitHubのコードのURL：[https://github.com/joslefaure/hit ](https://github.com/joslefaure/hit%20)　(現在何もアップロードされていません)  
-\*\*\*
+***
 
 
 
@@ -110,7 +110,7 @@
   GitHubのコードのURL：[https://github.com/wei-tim/YOWO](https://github.com/wei-tim/YOWO)　　
   
   GitHubには進化版的なリポジトリが62個存在している。  
-  \*\*\*
+***
   
   * Yowo_Plus
   
@@ -125,8 +125,8 @@
   採択された学会：不明　
   論文引用数：なし　最近過ぎてデータなし
   PaperWithCodeでの順位： 最近過ぎてデータなし
-  GitHubのコードのURL：[https://github.com/yjh0410/pytorch_yowo](https://github.com/yjh0410/pytorch_yowo)　　
-  \*\*\*
+  GitHubのコードのURL：[https://github.com/yjh0410/pytorch_yowo](https://github.com/yjh0410/pytorch_yowo)  
+***
   
   * TadTR: Transformer を使用したエンドツーエンドの一時的なアクション検出  
 ![](media/image12.png)
@@ -136,8 +136,8 @@
   採択された学会：IEEE Transactions on Image Processing (TIP) によって承認されました  
   論文引用数：26  
   PaperWithCodeでの順位： 1位　HACKSデータセット部門  
-  GitHubのコードのURL：[https://github.com/xlliu7/TadTR](https://github.com/xlliu7/TadTR)　
-\*\*\*
+  GitHubのコードのURL：[https://github.com/xlliu7/TadTR](https://github.com/xlliu7/TadTR)  
+***
 
   * WTAL不確実性モデリング  WTAL-Uncertainty-Modeling  
 ![](media/image13.png)
@@ -148,14 +148,15 @@
   論文引用数：42  
   PaperWithCodeでの順位： 4位ActivityNet-1.2での弱教師付きアクション ローカリゼーション部門  
   GitHubのコードのURL：[https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)　
-\*\*\*
+***
 
-**中間総括**(２０２２年11月29日)
+**中間総括**(２０２２年11月29日)  
 まだ新しい分野のせいか、コアな部分のアイデアだけ実装しているものが目立ちました。そのため一時的に世界一を取るためのものが多いのですが、記録というのはいつも果敢ないものですぐ他のものに取って代われていてランキングが書かれていてもそれはあくまで執筆時のもので今もそうかはわからないのです。コアな部分だけの実装なので入力は画像をあらかじめ計算済みI3D等の特徴量で、何時間もかかって計算させても出力はmAP@50%等成績のテキスト数行だけというものが多い印象です。  
 そんな中印象的なのはYOWOだと思います。すぐ画像で結果がわかってどういうものかは理解しやすかったと思います。  
 当初mmaction2も調査候補に入れていましたが、単なる「姿勢推定」という事で候補から外しました。しかしmmaction2を振り返ってみるとポーズ推定の前に画像内から人物を見つけて矩形で囲む人物検出を行っており、その部分はアノテーションツールで矩形作成の半自動化に使えそうな気がしました。  
 次元の話になりますが、点は0次元です。そして点を動かすと線となりそれは一次元です。線を動かすと矩形となり二次元です。矩形を動かすと立方体となり三次元です。そして三次元を動かすとそこには時間軸が発生して四次元となるでしょう。そういった考え方で、mmaction2及びmmpose3Dはポーズ推定を2回行っていて（恐らく計算済みのポースを2個使って）二次元を三次元にしているようです。原理はステレオカメラとほぼ同じだと思います。このような考え方で単眼カメラから3次元物体認識を行えば自動運転のコストダウンが狙えます。一度試してみたいような気がします。また会津大学元学長の岡 嶐一先生（現理事長）がそのような研究をしていました。  
-数字を入力して数字だけが返ってくるのではよくわからないので、動画を入力にしたリポジトリを探す、または、いくつかのリポジトリから動画入力から結果付き動画を出力するパイプライン処理を作成してTemporal Action Localizationを実感することが出来ればよいかと思います。
+数字を入力して数字だけが返ってくるのではよくわからないので、動画を入力にしたリポジトリを探す、または、いくつかのリポジトリから動画入力から結果付き動画を出力するパイプライン処理を作成してTemporal Action Localizationを実感することが出来ればよいかと思います。  
+***
 
   * Long Memory Transformer を使用した時間的アクション ローカリゼーション  
     Temporal Action Localization with Long Memory Transformer  
