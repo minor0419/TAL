@@ -1,9 +1,9 @@
-時間的行動定位(Temporal Action Localization)調査  
+**時間的行動定位(****Temporal Action Localization****)**** 調査**** **** **
 作成：2022/11/7  
 ネクストシステム 古林  
 
   * 弱教師付き時間アクションローカリゼーションのためのバックグラウンド抑制ネットワーク  
-  Background Suppression Network for Weakly-supervised Temporal Action Localization
+  Suppression Network for Weakly-supervised Temporal Action Localization
   
   ![](media/image1.png)
   この論文の特徴は動画をRGBとオプティカルフローに分けて扱う事です。
@@ -13,10 +13,10 @@
   採択された学会：AAAI2020(アメリカ人工知能学会)  
   論文引用数：121  
   PaperWithCodeでの順位：６位　時間的行動定位部門　ActivityNet-1.3データベース  
-  GitHubのコードのURL：https://github.com/Pilhyeon/BaSNet-pytorch  
+  GitHubのコードのURL：[https://github.com/Pilhyeon/BaSNet-pytorch](https://github.com/Pilhyeon/BaSNet-pytorch)  
   著者：Xiaolong Liu, Qimeng Wang, Yao Hu, Xu Tang, Shiwei Zhang, Song Bai, and Xiang Bai, Senior Member, IEEE  
   
-  ***
+  \*\*\*
 
   * ActionFormer：トランスフォーマーによるアクションの瞬間のローカライズ  
   ActionFormer：Localizing Moments of Actions with Transformers
@@ -26,13 +26,13 @@
   アクションインスタンスを検出するらしいです。まずビデオクリップの特徴量(I3D)のシーケンスを抽出し、これらの各特徴量をマルチスケールトランスフォーマーにより特徴ピラミッドに変換し、特徴ピラミッドを分類器と回帰器が共有して、時間ステップごとに行動候補を生成するらしいです。
   尚GitHubの実装は動画入力ではなくTHUMOS’14の計算済みI3d特徴量で、出力はテストデータのみとなっております。
   
-  論文URL： [2202.07925.pdf (arxiv.org)](https://arxiv.org/pdf/2202.07925.pdf)  
-  採択された学会：European Conference on Computer Vision, 2022  
-  論文引用数：18  
-  PaperWithCodeでの順位：1位　時間的行動定位部門　THUMOS’14データベース  
-  GitHubのコードのURL： [http://github.com/happyharrycn/actionformer_release](http://github.com/happyharrycn/actionformer_release)  
+  論文URL： [2202.07925.pdf (arxiv.org)](https://arxiv.org/pdf/2202.07925.pdf)
+  採択された学会：European Conference on Computer Vision, 2022
+  論文引用数：18
+  PaperWithCodeでの順位：1位　時間的行動定位部門　THUMOS’14データベース
+  GitHubのコードのURL： [http://github.com/happyharrycn/actionformer_release](http://github.com/happyharrycn/actionformer_release)
   著者：Chen-Lin Zhang, Jianxin Wu, and Yin Li, State Key Laboratory for Novel Software Technology, Nanjing University, China Paradigm Inc, Beijing, China, University of Wisconsin-Madison, USA  
-  ***
+  \*\*\*
   
 
   * 時間的行動検出のための提案関係ネットワーク  
@@ -40,19 +40,19 @@
   
   ![](media/image3.png)
   
-  この論文はViViT: A Video Vision Transformerをバックボーンとして利用しています。  
+  この論文は[ViViT: A Video Vision Transformer](https://arxiv.org/abs/2103.15691)をバックボーンとして利用しています。
   詳細はこちら…  
   [https://ai-scholar.tech/articles/transformer/ongoing](https://ai-scholar.tech/articles/transformer/ongoing)  
   
   バックボーン後はデータ拡張のために時間シフトの概念が用いられているそうです。そのあと提案関係モジュールが続きます。ここでは、対象となる行動の境界を正確に特定するためが自己注視操作を導入して各提案相互の依存関係を求めます。そして最終的に提案＋分類パイプラインに従って、最終的な検出結果を生成しています。提案関連モデルからパイプラインへのつながりの説明が不明瞭に感じました。
   
-論文URL： [https://paperswithcode.com/paper/proposal-relation-network-for-temporal-action](https://paperswithcode.com/paper/proposal-relation-network-for-temporal-action)  
+  論文URL： [https://paperswithcode.com/paper/proposal-relation-network-for-temporal-action](https://paperswithcode.com/paper/proposal-relation-network-for-temporal-action)  
   採択された学会：不明　アリババ・グループの支援を受けています。  
   論文引用数：９  
   PaperWithCodeでの順位：1位　時間的行動定位部門　ActivityNet-1.3データベース  
-  GitHubのコードのURL：https://github.com/wangxiang1230/SSTAP   
+  GitHubのコードのURL：[https://github.com/wangxiang1230/SSTAP](https://github.com/wangxiang1230/SSTAP)   
   著者：Xiang Wang, Zhiwu Qing, Ziyuan Huang, Yutong Feng2, Shiwei Zhang,Jianwen Jiang, Mingqian Tang, Changxin Gao, Nong Sang, Key Laboratory of Image Processing and Intelligent Control School of Artificial Intelligence and Automation, Huazhong University of Science and Technology, Alibaba Group  
-  ***
+  
   
   
   * 行動検出のための全体的相互作用変圧器ネットワーク  
@@ -78,14 +78,14 @@
   
 
 ![](media/image7.png)
-図 4: Intra-Modality Aggregator(IMA) の説明図。このように、本システムでは、1つのユニットから次のユニットへの特徴量が、まず文脈上の手がかりで補強され、次にフィルタリングされます。  
+図 4: Intra-Modality Aggregator(IMA) の説明図。このように、本システムでは、1つのユニットから次のユニットへの特徴量が、まず文脈上の手がかりで補強され、次にフィルタリングされます。
 
   論文URL： [http://arxiv.org/abs/2210.12686v1](http://arxiv.org/abs/2210.12686v1)  
   採択された学会：不明　マイクロソフトR&amp;D  
   論文引用数：不明　Google Scholar 検索不能  
   PaperWithCodeでの順位：1位　時間的行動定位部門　J-HMDB-21データベース  
-  GitHubのコードのURL：https://github.com/joslefaure/hit 　(現在何もアップロードされていません)  
-***
+  GitHubのコードのURL：[https://github.com/joslefaure/hit ](https://github.com/joslefaure/hit%20)　(現在何もアップロードされていません)  
+\*\*\*
 
 
 
@@ -95,25 +95,24 @@
   
   ![](media/image8.png)
   
-  この論文では、ビデオストリーム中の時空間行動定位をリアルタイムで行うための統一的なCNNアーキテクチャであるYOWOを紹介しています。YOWOは、時間情報と空間情報を同時に抽出する2つのブランチを持つ1段のアーキテクチャであり、そのブランチから予測します。YOWOは一段構成で、時間的・空間的情報を同時に抽出し、ビデオクリップから直接バウンディングボックスと行動確率を一度の評価で予測します。YOWOは世界で初めて、かつ唯一のシングルステージのアーキテクチャです。（正直言って他のアーキテクチャは複雑じゃありませんでしたか？）YOWOアーキテクチャは、2つのブランチを持つ1段のネットワークです。1つのブランチはキーフレームの空間的特徴を抽出する。すなわちもう一方のブランチは、以前のフレームからなるクリップの時空間的特徴を3D-CNNでモデル化します。最後に、融合された特徴量を用いてフレームレベルの検出を行い、アクションチューブを生成するためのリンキングアルゴリズムを提供します。リアルタイム性を維持するため、YOWOはRGBモダリティで運用されています。しかし、YOWOはRGBモダリティで動作していることに注意する必要があります。アーキテクチャは、RGBモダリティ上でのみ動作するように制限されているわけではありません。YOWOに異なるブランチを挿入することで、異なるモダリティで動作させることができます。オプティカルフロー、深度などの異なるモダリティのために、YOWOに異なるブランチを挿入することができます。さらに、2D-CNN および 3D-CNN ブランチには、任意の CNN アーキテクチャを使用することができます。  
+  この論文では、ビデオストリーム中の時空間行動定位をリアルタイムで行うための統一的なCNNアーキテクチャであるYOWOを紹介しています。YOWOは、時間情報と空間情報を同時に抽出する2つのブランチを持つ1段のアーキテクチャであり、そのブランチから予測します。YOWOは一段構成で、時間的・空間的情報を同時に抽出し、ビデオクリップから直接バウンディングボックスと行動確率を一度の評価で予測します。YOWOは世界で初めて、かつ唯一のシングルステージのアーキテクチャです。（正直言って他のアーキテクチャは複雑じゃありませんでしたか？）YOWOアーキテクチャは、2つのブランチを持つ1段のネットワークです。1つのブランチはキーフレームの空間的特徴を抽出する。すなわちもう一方のブランチは、以前のフレームからなるクリップの時空間的特徴を3D-CNNでモデル化します。最後に、融合された特徴量を用いてフレームレベルの検出を行い、アクションチューブを生成するためのリンキングアルゴリズムを提供します。リアルタイム性を維持するため、YOWOはRGBモダリティで運用されています。しかし、YOWOはRGBモダリティで動作していることに注意する必要があります。アーキテクチャは、RGBモダリティ上でのみ動作するように制限されているわけではありません。YOWOに異なるブランチを挿入することで、異なるモダリティで動作させることができます。オプティカルフロー、深度などの異なるモダリティのために、YOWOに異なるブランチを挿入することができます。さらに、2D-CNN および 3D-CNN ブランチには、任意の CNN アーキテクチャを使用することができます。
   
   
   
   ![](media/image9.png)
-  図：2D-CNNブランチと3D-CNNブランチから来る出力特徴マップを集約するためのチャネル融合とアテンション機構  
+  図：2D-CNNブランチと3D-CNNブランチから来る出力特徴マップを集約するためのチャネル融合とアテンション機構
   
   ![](media/image10.png)
-  図：(a)3D-CNNバックボーンと(b)2D-CNNバックボーンの活性化マップ。3D-CNNバックボーンは、動き／アクションが起きている部分に着目しています。2D-CNNバックボーンは、キーフレームに写っている全ての人物に着目している。例として、バレーボールのスパイク（上）、スケートボード（中）、ロープクライミング（下）を挙げることができます。YOWOはいくつかの欠点も持っています。生成するのはキーフレームとクリップで利用可能なすべての情報に従って予測を行うため、時には誤検出をすることがあります。YOWOは正しい行動定位を行うために十分な時間的内容を必要とします。人が急に動作を始めると、初期位置の特定が難しくなります。初期状態において処理されたクリップとキーフレームにポーズ情報が含まれていないからです。そこで長期特徴量バンク（LFB: Long Term Feature Bank）を利用します。クリップの長さを長くすることで、利用可能な時間情報が増加し、結果としてYOWOの性能が向上します。LFBは時間情報を増加させる目的で活用されています。
-  論文URL： [https://arxiv.org/pdf/1911.06644v5.pdf](https://arxiv.org/pdf/1911.06644v5.pdf)    
+  図：(a)3D-CNNバックボーンと(b)2D-CNNバックボーンの活性化マップ。3D-CNNバックボーンは、動き／アクションが起きている部分に着目しています。2D-CNNバックボーンは、キーフレームに写っている全ての人物に着目している。例として、バレーボールのスパイク（上）、スケートボード（中）、ロープクライミング（下）を挙げることができます。YOWOはいくつかの欠点も持っています。生成するのはキーフレームとクリップで利用可能なすべての情報に従って予測を行うため、時には誤検出をすることがあります。YOWOは正しい行動定位を行うために十分な時間的内容を必要とします。人が急に動作を始めると、初期位置の特定が難しくなります。初期状態において処理されたクリップとキーフレームにポーズ情報が含まれていないからです。そこで長期特徴量バンク（LFB: Long Term Feature Bank）を利用します。クリップの長さを長くすることで、利用可能な時間情報が増加し、結果としてYOWOの性能が向上します。LFBは時間情報を増加させる目的で活用されています。論文URL： [https://arxiv.org/pdf/1911.06644v5.pdf](https://arxiv.org/pdf/1911.06644v5.pdf)  
   採択された学会：不明　ドイツ科学アカデミー（DFG）及びNVIDIA社から支援を受けている  
   論文引用数：65  
   PaperWithCodeでの順位：1位　時間的行動定位部門　UCF101-24データベース  
-  GitHubのコードのURL：[https://github.com/wei-tim/YOWO](https://github.com/wei-tim/YOWO)  
+  GitHubのコードのURL：[https://github.com/wei-tim/YOWO](https://github.com/wei-tim/YOWO)　　
   
   GitHubには進化版的なリポジトリが62個存在している。  
-  ***
+  \*\*\*
   
-  * Yowo_Plus  
+  * Yowo_Plus
   
   ![](media/image11.png)
   
@@ -122,12 +121,12 @@
   
   私たちは改善するために、小さなデザイン変更をたくさん行いました。ネットワーク構造には3D-ResNext-101やYOLOv2を含むYOWOと同じものを使用しますが、実装済みのYOLOv2の事前学習重量は、YOLOv2よりも優れています。また,YOWOにおけるラベル割り当てを最適化しました。アクションインスタンスを正確に検出するために、ボックス回帰のためのGIoU損失をデプロイしました。インクリメンタルな改善の後、YOWOは公式のYOWOよりもかなり高い84.9\\%のフレームmAPと50.5\\%の動画mAPをUCF101-24で達成しました。AVAでは、最適化されたYOWOは、公式YOWOを超える16フレームの20.6\\%のフレームmAPを達成しました。32フレームのYOWOでは、RTX 3090 GPU上で25FPSの21.6フレームのmAPを実現しています。 最適化されたYOWOをYOWO-Plusと呼ぶことにしました。さらに、3D-ResNext-101を効率的な3D-ShuffleNet-v2に置き換え、軽量なアクション検出器YOWO-Nanoを設計しました。YOWO-Nano は UCF101-24 上で 90 FPS 以上の 81.0 \\% フレーム mAPと49.7\\%ビデオフレームmAPを達成します。また、AVAで約90 FPSの18.4 \\%のフレームmAPを達成しています。（要するに現状世界一）
   
-  論文URL： [https://arxiv.org/pdf/2210.11219v1.pdf](https://arxiv.org/pdf/2210.11219v1.pdf)  
+  論文URL： [https://arxiv.org/pdf/2210.11219v1.pdf](https://arxiv.org/pdf/2210.11219v1.pdf)
   採択された学会：不明　
-  論文引用数：なし　最近過ぎてデータなし  
-  PaperWithCodeでの順位： 最近過ぎてデータなし  
-  GitHubのコードのURL：[https://github.com/yjh0410/pytorch_yowo](https://github.com/yjh0410/pytorch_yowo)  
-  ***
+  論文引用数：なし　最近過ぎてデータなし
+  PaperWithCodeでの順位： 最近過ぎてデータなし
+  GitHubのコードのURL：[https://github.com/yjh0410/pytorch_yowo](https://github.com/yjh0410/pytorch_yowo)　　
+  \*\*\*
   
   * TadTR: Transformer を使用したエンドツーエンドの一時的なアクション検出  
 ![](media/image12.png)
@@ -137,8 +136,8 @@
   採択された学会：IEEE Transactions on Image Processing (TIP) によって承認されました  
   論文引用数：26  
   PaperWithCodeでの順位： 1位　HACKSデータセット部門  
-  GitHubのコードのURL：[https://github.com/xlliu7/TadTR](https://github.com/xlliu7/TadTR)  
-***
+  GitHubのコードのURL：[https://github.com/xlliu7/TadTR](https://github.com/xlliu7/TadTR)　
+\*\*\*
 
   * WTAL不確実性モデリング  WTAL-Uncertainty-Modeling  
 ![](media/image13.png)
@@ -148,15 +147,24 @@
   採択された学会：第35回AAAI人工知能会議（AAAI 2021）に採択  
   論文引用数：42  
   PaperWithCodeでの順位： 4位ActivityNet-1.2での弱教師付きアクション ローカリゼーション部門  
-  GitHubのコードのURL：[https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)  
-***
+  GitHubのコードのURL：[https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)　
+\*\*\*
 
-中間総括(２０２２年11月29日)  
+**中間総括**(２０２２年11月29日)
 まだ新しい分野のせいか、コアな部分のアイデアだけ実装しているものが目立ちました。そのため一時的に世界一を取るためのものが多いのですが、記録というのはいつも果敢ないものですぐ他のものに取って代われていてランキングが書かれていてもそれはあくまで執筆時のもので今もそうかはわからないのです。コアな部分だけの実装なので入力は画像をあらかじめ計算済みI3D等の特徴量で、何時間もかかって計算させても出力はmAP@50%等成績のテキスト数行だけというものが多い印象です。  
 そんな中印象的なのはYOWOだと思います。すぐ画像で結果がわかってどういうものかは理解しやすかったと思います。  
 当初mmaction2も調査候補に入れていましたが、単なる「姿勢推定」という事で候補から外しました。しかしmmaction2を振り返ってみるとポーズ推定の前に画像内から人物を見つけて矩形で囲む人物検出を行っており、その部分はアノテーションツールで矩形作成の半自動化に使えそうな気がしました。  
 次元の話になりますが、点は0次元です。そして点を動かすと線となりそれは一次元です。線を動かすと矩形となり二次元です。矩形を動かすと立方体となり三次元です。そして三次元を動かすとそこには時間軸が発生して四次元となるでしょう。そういった考え方で、mmaction2及びmmpose3Dはポーズ推定を2回行っていて（恐らく計算済みのポースを2個使って）二次元を三次元にしているようです。原理はステレオカメラとほぼ同じだと思います。このような考え方で単眼カメラから3次元物体認識を行えば自動運転のコストダウンが狙えます。一度試してみたいような気がします。また会津大学元学長の岡 嶐一先生（現理事長）がそのような研究をしていました。  
 数字を入力して数字だけが返ってくるのではよくわからないので、動画を入力にしたリポジトリを探す、または、いくつかのリポジトリから動画入力から結果付き動画を出力するパイプライン処理を作成してTemporal Action Localizationを実感することが出来ればよいかと思います。
 
+  * Long Memory Transformer を使用した時間的アクション ローカリゼーション  
+    Temporal Action Localization with Long Memory Transformer  
 
+![](media/image14.png)
+一時的なアクションのローカリゼーションは、入力として何百ものフレームを受け取ります。このタスクのエンドツーエンドのトレーニングには、巨大な GPU メモリ (&gt;32 GB) が必要です。この問題は、最近のビデオ トランスモデルではさらに悪化し、その多くは 2 次メモリの複雑さを持っています。これらの問題に対処するために、TALLFormer を提案します。これは、メモリ効率が高く、エンドツーエンドでトレーニング可能な、長期記憶を備えた時間アクション ローカリゼーショントランスフォーマーです。長期メモリメカニズムにより、各トレーニング イテレーション中に何百もの冗長なビデオフレームを処理する必要がなくなるため、GPU メモリの消費とトレーニング時間が大幅に削減されます。  
 
+論文URL： https://arxiv.org/pdf/2204.01680.pdf  
+採択された学会：ECCV 2022  
+論文引用数：5  
+PaperWithCodeでの順位：?  
+GitHubのコードのURL：https://github.com/klauscc/TALLFormer　
