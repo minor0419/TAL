@@ -1,0 +1,64 @@
+#Linux
+#pytorch 1.10.1
+#Python 3.8.5
+#ffmpeg 4.3.11
+
+conda create -n vedatad python=3.8.5 -y
+conda activate vedatad
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+git clone https://github.com/klauscc/TALLFormer
+cd vedatad
+vedatad_root=${PWD}
+pip install -r requirements/build.txt
+pip install -v -e .
+
+
+#THUMOSデータファイルを付属ツールでダウンロード
+mkdir -p data/thumos14
+cd data/thumos14
+../../tools/data/thumos14/download.sh
+
+#THUMOSアノテーションを付属ツールでJSONファイルへ変換
+cd ../..
+python ./tools/data/thumos14/txt2json.py --anno_root data/thumos14/annotations --video_root data/thumos14/videos --mode val
+python ./tools/data/thumos14/txt2json.py --anno_root data/thumos14/annotations --video_root data/thumos14/videos --mode test
+
+#THUMOS動画を付属ツールでFPS=15、256x256に変換
+./tools/data/extract_frames.sh data/thumos14/videos/val data/thumos14/frames_15fps_256x256/val -vf fps=15 -s 256x256 %05d.png
+./tools/data/extract_frames.sh data/thumos14/videos/test data/thumos14/frames_15fps_256x256/test -vf fps=15 -s 256x256 %05d.png
+
+#事前トレーニング済みの重みをダウンロードする
+mkdir -p ./data/pretrained_models/vswin
+wget https://github.com/SwinTransformer/storage/releases/download/v1.0.4/swin_base_patch244_window877_kinetics400_22k.pth -P ./data/pretrained_models/vswin
+wget https://github.com/SwinTransformer/storage/releases/download/v1.0.4/swin_tiny_patch244_window877_kinetics400_1k.pth -P ./data/pretrained_models/vswin
+
+#重みckpt をコードが受け入れられる形式に付属ツールで変換
+python ./tools/convert_vswin_ckpt.py --src ./data/pretrained_models/vswin/swin_tiny_patch244_window877_kinetics400_1k.pth
+python ./tools/convert_vswin_ckpt.py --src ./data/pretrained_models/vswin/swin_base_patch244_window877_kinetics400_22k.pth
+
+#トレーニング セットの特徴を付属ツールで抽出し、ファイル (メモリ バンク) に保存
+#CUDAメモリ不足になったがバッチサイズを３２から２へ変更で通る
+python ./tools/data/extract_features.py --config swin_b_15fps_256x256
+
+#学習を準備する(shファイルでやってもよい)
+expid=1.0.0-vswin_b_256x256-12GB
+mkdir -p data/tmp/eccv2022/thumos14/memory_mechanism/$expid
+cp -r data/thumos14/memory_mechanism/feat_swinb_15fps_256x256_crop224x224 data/tmp/eccv2022/thumos14/memory_mechanism/$expid/
+workdir=workdir/tallformer/$expid
+mkdir -p $workdir
+config=configs/trainval/thumos/$expid.py
+
+#学習するGPUは一台の設定元々は4台、1000エポックまで学習する(GPUメモリは11GB以上必要：RTX3060でギリギリセーフ)
+#１週間位かかる？GPU4台でも丸一日かかる？
+tools/dist_trainval.sh $config "0" --workdir $workdir
+
+#テストする
+expid=1.0.0-vswin_b_256x256-12GB
+workdir=workdir/tallformer/$expid
+config=configs/trainval/thumos/$expid.py
+for epoch in 600 700 800 900 1000; do
+    python tools/test.py $config $workdir/epoch_${epoch}_weights.pth \
+        --out $workdir/results_e$epoch-chunk.pkl
+done
+
+
