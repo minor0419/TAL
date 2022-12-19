@@ -13,10 +13,10 @@
   採択された学会：AAAI2020(アメリカ人工知能学会)  
   論文引用数：121  
   PaperWithCodeでの順位：６位　時間的行動定位部門　ActivityNet-1.3データベース  
-  GitHubのコードのURL：[https://github.com/Pilhyeon/BaSNet-pytorch](https://github.com/Pilhyeon/BaSNet-pytorch)  
+  GitHubのコードのURL：https://github.com/Pilhyeon/BaSNet-pytorch  
   著者：Xiaolong Liu, Qimeng Wang, Yao Hu, Xu Tang, Shiwei Zhang, Song Bai, and Xiang Bai, Senior Member, IEEE  
   
-***
+  \*\*\*
 
   * ActionFormer：トランスフォーマーによるアクションの瞬間のローカライズ  
   ActionFormer：Localizing Moments of Actions with Transformers
@@ -32,7 +32,7 @@
   PaperWithCodeでの順位：1位　時間的行動定位部門　THUMOS’14データベース
   GitHubのコードのURL： [http://github.com/happyharrycn/actionformer_release](http://github.com/happyharrycn/actionformer_release)
   著者：Chen-Lin Zhang, Jianxin Wu, and Yin Li, State Key Laboratory for Novel Software Technology, Nanjing University, China Paradigm Inc, Beijing, China, University of Wisconsin-Madison, USA  
-***
+  \*\*\*
   
 
   * 時間的行動検出のための提案関係ネットワーク  
@@ -40,7 +40,7 @@
   
   ![](media/image3.png)
   
-  この論文は[ViViT: A Video Vision Transformer](https://arxiv.org/abs/2103.15691)をバックボーンとして利用しています。
+  この論文はViViT: A Video Vision Transformerをバックボーンとして利用しています。
   詳細はこちら…  
   [https://ai-scholar.tech/articles/transformer/ongoing](https://ai-scholar.tech/articles/transformer/ongoing)  
   
@@ -50,9 +50,9 @@
   採択された学会：不明　アリババ・グループの支援を受けています。  
   論文引用数：９  
   PaperWithCodeでの順位：1位　時間的行動定位部門　ActivityNet-1.3データベース  
-  GitHubのコードのURL：[https://github.com/wangxiang1230/SSTAP](https://github.com/wangxiang1230/SSTAP)   
+  GitHubのコードのURL：https://github.com/wangxiang1230/SSTAP   
   著者：Xiang Wang, Zhiwu Qing, Ziyuan Huang, Yutong Feng2, Shiwei Zhang,Jianwen Jiang, Mingqian Tang, Changxin Gao, Nong Sang, Key Laboratory of Image Processing and Intelligent Control School of Artificial Intelligence and Automation, Huazhong University of Science and Technology, Alibaba Group  
-***  
+  
   
   
   * 行動検出のための全体的相互作用変圧器ネットワーク  
@@ -84,8 +84,8 @@
   採択された学会：不明　マイクロソフトR&amp;D  
   論文引用数：不明　Google Scholar 検索不能  
   PaperWithCodeでの順位：1位　時間的行動定位部門　J-HMDB-21データベース  
-  GitHubのコードのURL：[https://github.com/joslefaure/hit ](https://github.com/joslefaure/hit%20)　(現在何もアップロードされていません)  
-***
+  GitHubのコードのURL：https://github.com/joslefaure/hit 　(現在何もアップロードされていません)  
+\*\*\*
 
 
 
@@ -107,10 +107,10 @@
   採択された学会：不明　ドイツ科学アカデミー（DFG）及びNVIDIA社から支援を受けている  
   論文引用数：65  
   PaperWithCodeでの順位：1位　時間的行動定位部門　UCF101-24データベース  
-  GitHubのコードのURL：[https://github.com/wei-tim/YOWO](https://github.com/wei-tim/YOWO)　　
+  GitHubのコードのURL：https://github.com/wei-tim/YOWO　　
   
   GitHubには進化版的なリポジトリが62個存在している。  
-***
+  \*\*\*
   
   * Yowo_Plus
   
@@ -125,8 +125,8 @@
   採択された学会：不明　
   論文引用数：なし　最近過ぎてデータなし
   PaperWithCodeでの順位： 最近過ぎてデータなし
-  GitHubのコードのURL：[https://github.com/yjh0410/pytorch_yowo](https://github.com/yjh0410/pytorch_yowo)  
-***
+  GitHubのコードのURL：https://github.com/yjh0410/pytorch_yowo　　
+  \*\*\*
   
   * TadTR: Transformer を使用したエンドツーエンドの一時的なアクション検出  
 ![](media/image12.png)
@@ -136,8 +136,8 @@
   採択された学会：IEEE Transactions on Image Processing (TIP) によって承認されました  
   論文引用数：26  
   PaperWithCodeでの順位： 1位　HACKSデータセット部門  
-  GitHubのコードのURL：[https://github.com/xlliu7/TadTR](https://github.com/xlliu7/TadTR)  
-***
+  GitHubのコードのURL：https://github.com/xlliu7/TadTR　
+\*\*\*
 
   * WTAL不確実性モデリング  WTAL-Uncertainty-Modeling  
 ![](media/image13.png)
@@ -147,18 +147,17 @@
   採択された学会：第35回AAAI人工知能会議（AAAI 2021）に採択  
   論文引用数：42  
   PaperWithCodeでの順位： 4位ActivityNet-1.2での弱教師付きアクション ローカリゼーション部門  
-  GitHubのコードのURL：[https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)　
-***
+  GitHubのコードのURL：https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling　
+\*\*\*
 
-**中間総括**(２０２２年11月29日)  
+**中間総括**(２０２２年11月29日)
 まだ新しい分野のせいか、コアな部分のアイデアだけ実装しているものが目立ちました。そのため一時的に世界一を取るためのものが多いのですが、記録というのはいつも果敢ないものですぐ他のものに取って代われていてランキングが書かれていてもそれはあくまで執筆時のもので今もそうかはわからないのです。コアな部分だけの実装なので入力は画像をあらかじめ計算済みI3D等の特徴量で、何時間もかかって計算させても出力はmAP@50%等成績のテキスト数行だけというものが多い印象です。  
 そんな中印象的なのはYOWOだと思います。すぐ画像で結果がわかってどういうものかは理解しやすかったと思います。  
 当初mmaction2も調査候補に入れていましたが、単なる「姿勢推定」という事で候補から外しました。しかしmmaction2を振り返ってみるとポーズ推定の前に画像内から人物を見つけて矩形で囲む人物検出を行っており、その部分はアノテーションツールで矩形作成の半自動化に使えそうな気がしました。  
 次元の話になりますが、点は0次元です。そして点を動かすと線となりそれは一次元です。線を動かすと矩形となり二次元です。矩形を動かすと立方体となり三次元です。そして三次元を動かすとそこには時間軸が発生して四次元となるでしょう。そういった考え方で、mmaction2及びmmpose3Dはポーズ推定を2回行っていて（恐らく計算済みのポースを2個使って）二次元を三次元にしているようです。原理はステレオカメラとほぼ同じだと思います。このような考え方で単眼カメラから3次元物体認識を行えば自動運転のコストダウンが狙えます。一度試してみたいような気がします。また会津大学元学長の岡 嶐一先生（現理事長）がそのような研究をしていました。  
-数字を入力して数字だけが返ってくるのではよくわからないので、動画を入力にしたリポジトリを探す、または、いくつかのリポジトリから動画入力から結果付き動画を出力するパイプライン処理を作成してTemporal Action Localizationを実感することが出来ればよいかと思います。  
-***
+数字を入力して数字だけが返ってくるのではよくわからないので、動画を入力にしたリポジトリを探す、または、いくつかのリポジトリから動画入力から結果付き動画を出力するパイプライン処理を作成してTemporal Action Localizationを実感することが出来ればよいかと思います。
 
-  * TALLFormer : Long Memory Transformer を使用した時間的アクション ローカリゼーション  
+  * Long Memory Transformer を使用した時間的アクション ローカリゼーション  
     Temporal Action Localization with Long Memory Transformer  
 
 ![](media/image14.png)
@@ -169,3 +168,21 @@
 論文引用数：5  
 PaperWithCodeでの順位：?  
 GitHubのコードのURL：https://github.com/klauscc/TALLFormer　
+  
+  * A2CL-PT：弱い教師付きの時間的活動の局所化のための敵対的背景認識損失 (ECCV 2020)
+  Adversarial Background-Aware Loss for Weakly-supervised Temporal Activity Localization
+  
+  ![](media/image15.png)
+  
+  図示されているとおりRGB画像とオプティカルフロー画像の特徴量から動作の時間と種類を決めているようです。
+  ![](media/image16.png)
+  弱い教師付きの一時的なアクティビティのローカリゼーションの既存の方法は、強力な一時的なアクティビティのローカリゼーションにそのような能力が重要であるにもかかわらず、各ビデオの関心のあるアクティビティから背景情報を十分に区別できないという欠点がありました。この目的のために、トリプレットのペアを使用したAdversarial and Angular Center Loss（A2CL-PT）という新しい方法を提案されました。ポスターが付いていました。以下に示します。論文内では以前調査したBaSNetとの対比がされていました。ここで映像レベルの特徴をF、背景特徴により多く関与する特徴をf、それらに対応する中心c、負の中心をcn、(F, c, cn)の三重項と(c, f, F)それぞれをACL-PTと呼び、それぞれの角度距離を敵対的に学習する事によってバックグラウンド画像をうまく押し込んだという事を言っているようです。
+  
+  ![](media/image17.png)
+  
+論文URL： [https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590273.pdf](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590273.pdf)  
+採択された学会：ECCV 2020  
+論文引用数：  58
+PaperWithCodeでの順位：2位　Weakly-supervised Temporal Action Localization THUMOS14部門 狭い！  
+GitHubのコードのURL：[https://github.com/MichiganCOG/A2CL-PT](https://github.com/MichiganCOG/A2CL-PT)　
+
