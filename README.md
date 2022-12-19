@@ -158,7 +158,7 @@
 数字を入力して数字だけが返ってくるのではよくわからないので、動画を入力にしたリポジトリを探す、または、いくつかのリポジトリから動画入力から結果付き動画を出力するパイプライン処理を作成してTemporal Action Localizationを実感することが出来ればよいかと思います。  
 ***
 
-  * Long Memory Transformer を使用した時間的アクション ローカリゼーション  
+  * TALLFormer : Long Memory Transformer を使用した時間的アクション ローカリゼーション  
     Temporal Action Localization with Long Memory Transformer  
 
 ![](media/image14.png)
