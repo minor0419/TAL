@@ -1,6 +1,6 @@
 **時間的行動定位(****Temporal Action Localization****)**** 調査**** **** **
 作成：2022/11/7  
-ネクストシステム 古林  
+ 
 
   * 弱教師付き時間アクションローカリゼーションのためのバックグラウンド抑制ネットワーク  
   Suppression Network for Weakly-supervised Temporal Action Localization
