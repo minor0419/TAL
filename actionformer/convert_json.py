@@ -18,8 +18,10 @@ def main():
     file_database = dict()
     json_files = glob.glob('./annotations/*.json')
     json_files.sort()
-    file_num = len(json_files)
+    file_num = len(json_files) - 2  # Optionbase zero
     training_num = int(file_num * 0.7)
+    if training_num == file_num:
+        training_num = file_num - 1
     i = 0
     for json_file in json_files:
         if not json_file == './annotations/label_define.json':
@@ -56,7 +58,7 @@ def main():
                 annotation_dist = dict({'label': label, 'segment': duration_time, 'segment(frames)': duration_frame,
                                         'label_id': label_num})
                 annotations_list.append(annotation_dist)
-            if i >= training_num:
+            if i <= training_num:
                 subset_str = 'Validation'
             else:
                 subset_str = 'Test'
